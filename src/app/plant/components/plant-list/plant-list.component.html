@@ -1,0 +1,25 @@
+<table class="table" style="max-width: 768px">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre común</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Clima</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let plant of plants">
+      <th scope="row">{{ plant.id }}</th>
+      <td>{{ plant.common_name }}</td>
+      <td>{{ plant.type }}</td>
+      <td>{{ plant.climate }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="d-block">
+  Total plantas del interior: {{ totalNativePlants }}
+</span>
+<span class="d-block">
+  Total plantas del exterior: {{ totalForeignPlants }}
+</span>
